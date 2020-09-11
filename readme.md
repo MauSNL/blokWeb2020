@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+De basis van de website verliep soepel en en nog niet echt tegen een groot probleem aangelopen. Moet nog even kijken naar de juiste font weights voor de header.
 
 **Screenshot(s):**
 
