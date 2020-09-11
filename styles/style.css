@@ -2,6 +2,7 @@
 *, *::after, *::before {
   box-sizing:border-box;
 }
+
 body{
   font-family: 'Rubik', sans-serif;
   color: white;
@@ -37,6 +38,7 @@ header nav:first-of-type{
 
 nav ul{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
