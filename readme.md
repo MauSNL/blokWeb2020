@@ -45,6 +45,7 @@ Ik liep vooral tegen het balanceren van de tijd aan met werk, school en dan ook 
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent-
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/voortgang0102.png)
 
 ### Agenda voor meeting
 
