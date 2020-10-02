@@ -30,8 +30,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+De basis van de website verliep soepel en en nog niet echt tegen een groot probleem aangelopen. Moet nog even kijken naar de juiste font weights voor de header. 
+
+Ik liep vooral tegen het balanceren van de tijd aan met werk, school en dan ook de verschillende vakken.
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent-
+
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/voortgang02.png)
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
 
 
 ## Voortgang 1 (week 3)
