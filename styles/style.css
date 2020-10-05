@@ -193,6 +193,8 @@ aside form input{
 }
 
 section:nth-of-type(2) nav:last-of-type{
+  display: flex;
+  justify-content: center;
   padding: 2rem;
   background-color: #2b2b2b;
   width: 100%;
@@ -203,8 +205,31 @@ section:nth-of-type(2) nav:last-of-type p{
 }
 
 section:last-of-type{
-  padding: 2rem;
   background-color: #cf3847;
+}
+
+section:last-of-type h2{
+  width: 100vw;
+  padding: 2rem;
+}
+
+section:last-of-type div{
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+section:last-of-type article{
+  margin: 2rem;
+  width: 300px;
+}
+
+section:last-of-type article:last-of-type img{
+  margin-right: 2rem;
+}
+
+section:last-of-type article img{
+  width: 300px;
 }
 
 section:last-of-type a{
@@ -214,22 +239,23 @@ section:last-of-type a{
 
 section:last-of-type a img{
   margin-left: 2rem;
+  width: 300px;
 }
 
-div{
+section:nth-of-type(2) div{
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
 }
 
-div article{
+section:nth-of-type(2) div article{
   height: 15rem;
   width:50%;
   background-image: url("../images/sw3.jpg");
   position: relative;
 }
 
-div article h3{
+section:nth-of-type(2) div article h3{
   position: absolute;
   bottom: 5px;
   left: 10px;
