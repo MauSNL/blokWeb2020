@@ -2,12 +2,16 @@
 *, *::after, *::before {
   box-sizing:border-box;
 }
+html{
+  overflow: auto;
+}
 
 body{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik',sans-serif;
   color: white;
   background-color: #222;
   margin: 0;
+  overflow: auto;
 }
 
 h1{
@@ -16,14 +20,6 @@ h1{
   letter-spacing: .96px;
   text-transform: uppercase;
   font-family: 'Rubik',sans-serif;
-}
-
-h2{
-
-}
-
-h3{
-  width: 100%;
 }
 
 a {
@@ -40,20 +36,29 @@ ul{
   list-style-type: none;
 }
 
+header{
+  position: fixed;
+  background-color: #2b2b2b;
+  height: 7em;
+  overflow: hidden;
+  transition: all .2s ease-in;
+  z-index: 12;
+}
+
 header nav:first-of-type{
-  background-color: black;
   border-top: solid 5px #c63134;
 }
 
 nav{
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   padding: 1rem;
 }
 
 nav ul{
-  display: flex;
+  display: none;
 }
 
 nav ul li{
@@ -61,12 +66,59 @@ nav ul li{
 }
 
 nav img{
-  height: 75px;
+  height: 66px;
+}
+
+nav span{
+  display: block;
+  position: relative;
+}
+
+nav div{
+  width: 33%;
+  justify-content: center;
+}
+
+nav span, nav span::before, nav span::after{
+  width:2rem;
+  height: 3px;
+  background: white;
+  transition: transform 150ms ease-in;
+}
+
+nav span::before, nav span::after{
+  content: '';
+  position: absolute;
+}
+
+nav span::before{
+  bottom: 6px;
+}
+
+nav span::after{
+  top: 6px;
+}
+
+nav span.active::before{
+  opacity: 0;
+}
+
+nav span.active{
+  transform: rotate(45deg);
+}
+
+nav span.active::after{
+  transform: rotate(90deg) translate(-6px)
+}
+
+.click{
+  padding:1rem;
 }
 
 section:first-of-type{
   position: relative;
-  height: 60vh;
+  height: 700px;
+  margin-top: 7em;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -84,12 +136,12 @@ section:first-of-type article{
   bottom: 0;
   left: 0;
   right: 0;
-  margin:0; padding:.5em;
+  margin:0; padding:2em;
   background-color: #222
 }
 
 section:first-of-type article h1{
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 section:nth-of-type(2){
@@ -108,7 +160,7 @@ section nav:first-of-type{
 
 section nav ul{
   width: 100vw;
-  flex-wrap: wrap;    
+  flex-wrap: wrap;
 }
 
 aside{
@@ -199,8 +251,32 @@ footer section:last-of-type a{
   display: inline-block;
 }
 
-
 @keyframes nav_color {
   from {color: inherit;;}
   to {color: red;}
+}
+
+.menu{
+  background-color: #dc4144;
+  height: 100vh;
+  z-index: 38;
+}
+
+.menu nav{
+  flex-wrap: wrap;
+}
+
+.menu ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li{
+  width: 100%;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.menu li:hover{
+  color: #2b2b2b
 }
