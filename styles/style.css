@@ -2,6 +2,7 @@
 *, *::after, *::before {
   box-sizing:border-box;
 }
+
 html{
   overflow: auto;
 }
@@ -305,4 +306,13 @@ footer section:last-of-type a{
 
 .menu li:hover{
   color: #2b2b2b
+}
+/* ben nog bezig met de 2de pagina
+.nieuws {
+  margin-top: 7rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
