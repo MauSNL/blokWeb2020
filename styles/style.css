@@ -2,7 +2,7 @@
 *, *::after, *::before {
   box-sizing:border-box;
 }
-
+/* General Styling */
 html{
   overflow: auto;
 }
@@ -13,6 +13,10 @@ body{
   background-color: #222;
   margin: 0;
   overflow: auto;
+}
+
+main{
+  margin-top: 7em;
 }
 
 h1{
@@ -37,9 +41,10 @@ ul{
   list-style-type: none;
 }
 
+/* Navigation*/
 header{
   position: fixed;
-  background-color: #2b2b2b;
+  background-color: #0c0707;
   height: 7em;
   overflow: hidden;
   transition: all .2s ease-in;
@@ -116,7 +121,8 @@ nav span.active::after{
   padding:1rem;
 }
 
-section:first-of-type{
+/*Banner*/
+main section:first-of-type{
   position: relative;
   height: 700px;
   margin-top: 7em;
@@ -131,7 +137,7 @@ section:first-of-type{
   background-position: center;
 }
 
-section:first-of-type article{
+main section:first-of-type article{
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -141,25 +147,26 @@ section:first-of-type article{
   background-color: #222
 }
 
-section:first-of-type article h1{
+main section:first-of-type article h1{
   margin-top: 4rem;
 }
 
-section:nth-of-type(2){
+/*Discover games*/
+main section:nth-of-type(2){
   display: flex;
   flex-wrap: wrap;
   background-color: #c63134;
 }
 
-section nav:first-of-type{
+main section nav:first-of-type{
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #cf3847;
+  background-color: #dc4144;
 }
 
-section nav ul{
+main section nav ul{
   width: 100vw;
   flex-wrap: wrap;
 }
@@ -167,9 +174,9 @@ section nav ul{
 aside{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   width: 100vw;
   background-color: #222;
+  padding: .5rem;
 }
 
 aside form{
@@ -180,12 +187,10 @@ aside form{
 
 aside form input{
   background-color: #0c0707;
-  font-family: Roboto Mono,monospace;
   color: #fff;
   border: 0;
   height: 40px;
-  width:90%;
-  margin-top: 2rem;
+  width:99%;
   font-size: 14px;
   line-height: 20px;
   padding-left: 19px;
@@ -193,7 +198,21 @@ aside form input{
   box-sizing: border-box;
 }
 
-section:nth-of-type(2) nav:last-of-type{
+aside ul{
+  color: #7c7c7c;
+  width: 100%;
+  padding-left: .5rem;
+}
+
+aside ul li{
+  border-top: solid black 1px;
+  width: 100%;
+}
+
+aside ul li h3{
+  color: #fff;
+}
+main section:nth-of-type(2) nav:last-of-type{
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -201,46 +220,8 @@ section:nth-of-type(2) nav:last-of-type{
   width: 100%;
 }
 
-section:nth-of-type(2) nav:last-of-type p{
+main section:nth-of-type(2) nav:last-of-type p{
   padding: 0 2rem;
-}
-
-section:last-of-type{
-  background-color: #cf3847;
-}
-
-section:last-of-type h2{
-  width: 100vw;
-  padding: 2rem;
-}
-
-section:last-of-type div{
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
-}
-
-section:last-of-type article{
-  margin: 2rem;
-  width: 300px;
-}
-
-section:last-of-type article:last-of-type img{
-  margin-right: 2rem;
-}
-
-section:last-of-type article img{
-  width: 300px;
-}
-
-section:last-of-type a{
-  display: flex;
-  align-items: center;
-}
-
-section:last-of-type a img{
-  margin-left: 2rem;
-  width: 300px;
 }
 
 section:nth-of-type(2) div{
@@ -253,6 +234,8 @@ section:nth-of-type(2) div article{
   height: 15rem;
   width:50%;
   background-image: url("../images/sw3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -262,6 +245,45 @@ section:nth-of-type(2) div article h3{
   left: 10px;
 }
 
+/* Shop Items */
+main section:last-of-type{
+  background-color: #dc4144;
+}
+
+main section:last-of-type h2{
+  width: 100vw;
+  padding: 2rem;
+}
+
+main section:last-of-type div{
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+main section:last-of-type article{
+  margin: 2rem;
+  width: 300px;
+}
+
+main section:last-of-type article:last-of-type img{
+  margin-right: 2rem;
+}
+
+main section:last-of-type article img{
+  width: 300px;
+}
+
+main section:last-of-type a{
+  display: flex;
+  align-items: center;
+}
+
+main section:last-of-type a img{
+  margin-left: 2rem;
+  width: 300px;
+}
+/* Footer */
 footer section:first-of-type{
   height: auto;
   padding: 2rem;
@@ -269,15 +291,60 @@ footer section:first-of-type{
   background-image: none;
 }
 
+footer section:first-of-type form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer section:first-of-type form input{
+  background-color: #0c0707;
+  color: #fff;
+  border: 0;
+  height: 40px;
+  width:90%;
+  margin-top: 2rem;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 20px;
+  padding-left: 19px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+footer section:first-of-type form a{
+  display: flex;
+  align-items: center;
+  background-color: #474747;
+  color: #fff;
+  border: 0;
+  height: 40px;
+  width:90%;
+  font-size: 14px;
+  padding-left: 19px;
+}
+
+footer section:first-of-type ul{
+  padding: 0;
+}
+
+footer section:first-of-type svg{
+  width: 30px;
+}
+
+/* Copyright */
 footer section:last-of-type{
   padding: 2rem;
-  background-color: #2b2b2b;
+  color: #7c7c7c;
+  background-color: #222;
 }
 
 footer section:last-of-type a{
   display: inline-block;
+  text-decoration: underline;
+  color: #fff;
 }
 
+/* Surface */
 @keyframes nav_color {
   from {color: inherit;;}
   to {color: red;}
@@ -305,14 +372,43 @@ footer section:last-of-type a{
 }
 
 .menu li:hover{
-  color: #2b2b2b
+  color: #0c0707;
 }
-/* ben nog bezig met de 2de pagina
-.nieuws {
-  margin-top: 7rem;
-  width: auto;
+
+/* Pagina 2*/
+main.nieuws article header{
+  position: relative;
+  z-index: auto;
+  background-color: #dc4144;
   height: auto;
+  padding: 2em;
+}
+
+main.nieuws article header h1{
+  margin: auto;
+}
+
+main.nieuws article div img, main.nieuws article div iframe{
+  width: 100vw;
+}
+
+main.nieuws article div p{
+  padding: 2rem;
+}
+
+main.nieuws article div h2{
+  padding-left: 2rem;
+}
+
+main.nieuws article footer{
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  border-top: solid grey 1px;
+}
+
+main.nieuws article footer svg{
+  margin: .2em;
 }
