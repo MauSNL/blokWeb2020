@@ -8,11 +8,12 @@ html{
 }
 
 body{
-  font-family: 'Rubik',sans-serif;
+  font-family: 'Roboto Mono',monospace;
   color: white;
   background-color: #222;
   margin: 0;
   overflow: auto;
+  letter-spacing: .37px;
 }
 
 main{
@@ -27,14 +28,19 @@ h1{
   font-family: 'Rubik',sans-serif;
 }
 
+h2{
+  font-family: 'Rubik', sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  letter-spacing: .37px;
 }
 
 a:hover {
-  animation-name: nav_color;
-  animation-duration: 1s;
+  color: red;
+  transition: 1s;
 }
 
 ul{
@@ -49,10 +55,16 @@ header{
   overflow: hidden;
   transition: all .2s ease-in;
   z-index: 12;
+  font-family: 'Rubik', sans-serif;
 }
 
 header nav:first-of-type{
   border-top: solid 5px #c63134;
+}
+
+header nav:first-of-type img{
+  margin: auto;
+  margin-right: 23vw;
 }
 
 nav{
@@ -81,7 +93,6 @@ nav span{
 }
 
 nav div{
-  width: 33%;
   justify-content: center;
 }
 
@@ -119,6 +130,21 @@ nav span.active::after{
 
 .click{
   padding:1rem;
+}
+
+nav ul:nth-of-type(2){
+  width: 100%;
+  flex-direction: row;
+}
+
+nav ul:nth-of-type(2) li{
+  width: 15%;
+  height:auto;
+}
+
+nav ul:nth-of-type(2) li img{
+  width: 30px;
+  height:auto;
 }
 
 /*Banner*/
@@ -231,12 +257,22 @@ section:nth-of-type(2) div{
 }
 
 section:nth-of-type(2) div article{
-  height: 15rem;
-  width:50%;
-  background-image: url("../images/sw3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-height: 15rem;
+  max-width:50%;
   position: relative;
+  overflow: hidden;
+}
+
+section:nth-of-type(2) div article img{
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  right: 95px;
+}
+
+section:nth-of-type(2) div article img:hover{
+  transform: scale(1.1);
+  transition: all .3s ease-in;
 }
 
 section:nth-of-type(2) div article h3{
@@ -246,43 +282,77 @@ section:nth-of-type(2) div article h3{
 }
 
 /* Shop Items */
-main section:last-of-type{
+main section:nth-of-type(3){
   background-color: #dc4144;
 }
 
-main section:last-of-type h2{
+main section:nth-of-type(3) h1{
   width: 100vw;
   padding: 2rem;
 }
 
-main section:last-of-type div{
+main section:nth-of-type(3) div{
   display: flex;
   overflow-x: scroll;
   width: 100%;
 }
 
-main section:last-of-type article{
+main section:nth-of-type(3) article{
   margin: 2rem;
   width: 300px;
 }
 
-main section:last-of-type article:last-of-type img{
+main section:nth-of-type(3) article:last-of-type img{
   margin-right: 2rem;
 }
 
-main section:last-of-type article img{
+main section:nth-of-type(3) article img{
   width: 300px;
 }
 
-main section:last-of-type a{
+main section:nth-of-type(3) a{
   display: flex;
   align-items: center;
 }
 
-main section:last-of-type a img{
+main section:nth-of-type(3) a:hover{
+  color: #7c7c7c;
+}
+
+main section:nth-of-type(3) a img{
   margin-left: 2rem;
   width: 300px;
 }
+
+main section:last-of-type article{
+  margin: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+main section:last-of-type div:first-of-type{
+  width: 30%;
+}
+
+main section:last-of-type div:first-of-type img{
+  width: 100%;
+  height: auto;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+main section:last-of-type a{
+  color: #7c7c7c;
+}
+
+main section:last-of-type a:hover{
+  color: #fff;
+}
+
+main section:last-of-type div:last-of-type{
+  width: 65%;
+}
+
 /* Footer */
 footer section:first-of-type{
   height: auto;
@@ -329,6 +399,7 @@ footer section:first-of-type ul{
 
 footer section:first-of-type svg{
   width: 30px;
+  margin-right: 1rem;
 }
 
 /* Copyright */
@@ -344,11 +415,7 @@ footer section:last-of-type a{
   color: #fff;
 }
 
-/* Surface */
-@keyframes nav_color {
-  from {color: inherit;;}
-  to {color: red;}
-}
+/* Nav overlay */
 
 .menu{
   background-color: #dc4144;
@@ -371,8 +438,9 @@ footer section:last-of-type a{
   font-weight: 900;
 }
 
-.menu li:hover{
+.menu li a:hover{
   color: #0c0707;
+  fill: #0c0707;
 }
 
 /* Pagina 2*/
@@ -411,4 +479,9 @@ main.nieuws article footer{
 
 main.nieuws article footer svg{
   margin: .2em;
+}
+
+main.nieuws video{
+  width: 100vw;
+  height: auto;
 }
