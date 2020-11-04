@@ -12,6 +12,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 @@ -30,41 +30,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
+## Herkansing / aanvulling
+Ik heb alle aanpassingen gedaan en de site ziet er nu een stuk beter uit. De kleine finishing touches maken hem toch wel echt af.
+Ook heb ik meer geleerd over bepaalde CSS tricks en ben toch wel blij dat ik dit nog even gedaan heb.
+
+### Home screen
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/her01.png)
+### Overlay Nav
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/her02.png)
+### Propaganda scherm
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/her03.png)
+
 ## Einggesprek
 
 Alles zag er goed uit maar kon nog wel even de puntjes op de "i" gebruiken. De letterspacing was anders en er werd gevraagd toch nog even naar de hover te kijken van elementen op de website ook al was het een mobiele website. Ook moest ik de website door een w3 validator halen want er zaten ngo wat errors in. 
@@ -20,8 +31,11 @@ Iframes mochten ook niet dus ik moet de youtube video even aanpassen en er ontbr
 
 Deze moeten af zijn 4 nov voor 18:00.
 
+### Home screen
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek01.png)
+### Overlay Nav
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek02.png)
+### Propaganda scherm
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek03.png)
 
 ## Voortgang 2 (week 5)
