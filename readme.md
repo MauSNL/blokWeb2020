@@ -1,6 +1,5 @@
 # Procesverslag
 **Auteur:** Mauro Stuifzand
-**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -8,11 +7,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. https://developer.mozilla.org/en-US/
-1. -bron 1-
 2. -bron 2-
 3. -...-
 
 @@ -30,41 +30,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
+
+## Einggesprek
+
+Alles zag er goed uit maar kon nog wel even de puntjes op de "i" gebruiken. De letterspacing was anders en er werd gevraagd toch nog even naar de hover te kijken van elementen op de website ook al was het een mobiele website. Ook moest ik de website door een w3 validator halen want er zaten ngo wat errors in. 
+
+Iframes mochten ook niet dus ik moet de youtube video even aanpassen en er ontbraken nog een twitter feed en socials in de Nav.
+
+Deze moeten af zijn 4 nov voor 18:00.
+
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek01.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek02.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindgesprek03.png)
 
 ## Voortgang 2 (week 5)
 
