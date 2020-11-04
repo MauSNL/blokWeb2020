@@ -43,6 +43,10 @@ a:hover {
   transition: 1s;
 }
 
+svg{
+  fill: currentColor;
+}
+
 ul{
   list-style-type: none;
 }
@@ -397,6 +401,11 @@ footer section:first-of-type ul{
   padding: 0;
 }
 
+footer section:first-of-type ul li{
+  margin: 1rem;
+  margin-left: 0;
+}
+
 footer section:first-of-type svg{
   width: 30px;
   margin-right: 1rem;
@@ -413,6 +422,10 @@ footer section:last-of-type a{
   display: inline-block;
   text-decoration: underline;
   color: #fff;
+}
+
+footer section:last-of-type a:hover{
+  color: red;
 }
 
 /* Nav overlay */
@@ -433,13 +446,22 @@ footer section:last-of-type a{
 }
 
 .menu li{
+  color: #fff;
   width: 100%;
   font-size: 36px;
   font-weight: 900;
 }
 
+.menu li svg{
+  fill: #fff;
+}
+
 .menu li a:hover{
+  transition: 1s;
   color: #0c0707;
+}
+.menu li svg:hover{
+  transition: 1s;
   fill: #0c0707;
 }
 
