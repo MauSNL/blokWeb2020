@@ -402,13 +402,12 @@ footer section:first-of-type ul{
 }
 
 footer section:first-of-type ul li{
-  margin: 1rem;
-  margin-left: 0;
+  margin-bottom: 1rem;
 }
 
 footer section:first-of-type svg{
   width: 30px;
-  margin-right: 1rem;
+  margin-right: .2rem;
 }
 
 /* Copyright */
